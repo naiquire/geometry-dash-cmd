@@ -5,3 +5,6 @@ C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry
 C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.csproj.CoreCompileInputs.cache
 C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.exe
 C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.pdb
+C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry_dash.display.resources
+C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry_dash.Properties.Resources.resources
+C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.csproj.GenerateResource.cache

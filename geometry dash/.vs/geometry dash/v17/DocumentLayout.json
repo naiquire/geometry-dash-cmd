@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|c:\\users\\boyss\\documents\\general\\github\\geometry-dash-cmd\\geometry dash\\geometry dash\\render.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|solutionrelative:geometry dash\\render.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|c:\\users\\boyss\\documents\\general\\github\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|solutionrelative:geometry dash\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|c:\\users\\boyss\\documents\\general\\github\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|solutionrelative:geometry dash\\display.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|c:\\users\\boyss\\documents\\general\\github\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|solutionrelative:geometry dash\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C798E03B-60AE-4DD7-BE16-07A938F1AA13}|geometry dash\\geometry dash.csproj|C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,33 +54,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "display.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.cs",
+              "RelativeDocumentMoniker": "geometry dash\\display.cs",
+              "ToolTip": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.cs [Design]",
+              "RelativeToolTip": "geometry dash\\display.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T20:13:26.359Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "display.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.Designer.cs",
+              "RelativeDocumentMoniker": "geometry dash\\display.Designer.cs",
+              "ToolTip": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.Designer.cs",
+              "RelativeToolTip": "geometry dash\\display.Designer.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowEMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T20:13:08.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "display.cs",
+              "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.cs",
+              "RelativeDocumentMoniker": "geometry dash\\display.cs",
+              "ToolTip": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\display.cs",
+              "RelativeToolTip": "geometry dash\\display.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T20:12:53.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\Program.cs",
               "RelativeDocumentMoniker": "geometry dash\\Program.cs",
               "ToolTip": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\Program.cs",
               "RelativeToolTip": "geometry dash\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwCMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T19:50:06.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "render.cs",
-              "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\render.cs",
-              "RelativeDocumentMoniker": "geometry dash\\render.cs",
-              "ToolTip": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\render.cs",
-              "RelativeToolTip": "geometry dash\\render.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:00:02.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "decode.py",
               "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\decode.py",
               "RelativeDocumentMoniker": "geometry dash\\decode.py",
@@ -80,18 +113,17 @@
               "RelativeToolTip": "geometry dash\\decode.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-05-09T20:09:03.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T20:09:03.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "level.cs",
               "DocumentMoniker": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\level.cs",
               "RelativeDocumentMoniker": "geometry dash\\level.cs",
               "ToolTip": "C:\\Users\\boyss\\Documents\\General\\GitHub\\geometry-dash-cmd\\geometry dash\\geometry dash\\level.cs",
               "RelativeToolTip": "geometry dash\\level.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T19:50:31.119Z",
               "EditorCaption": ""

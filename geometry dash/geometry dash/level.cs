@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Xml.Linq;
+using System.Windows.Forms;
 
 namespace geometry_dash
 {
@@ -13,6 +14,7 @@ namespace geometry_dash
         public int ID { get; set; }
         public float X { get; set; }
         public float Y { get; set; }
+        public PictureBox pic { get; set; } // for rendering
     }
     public class level
     {
