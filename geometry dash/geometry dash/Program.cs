@@ -29,11 +29,12 @@ namespace geometry_dash
             {
                 Bitmap background = new Bitmap(fs);
                 render.renderBackground(background);
-                Console.ReadKey();
+                
             }
 
-            
-            
+            level level = new level(1);
+            render r = new render(level.objects);
+            Console.ReadKey();
         }
     }
 }

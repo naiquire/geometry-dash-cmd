@@ -17,7 +17,7 @@ namespace geometry_dash
     public class level
     {
         private int levelID;
-        private Object[] objects;
+        public Object[] objects;
 
         private static Dictionary<int, Action<Object, string>> propertyMap = new Dictionary<int, Action<Object, string>>
         {

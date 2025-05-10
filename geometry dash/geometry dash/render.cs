@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace geometry_dash
 {
@@ -13,9 +14,25 @@ namespace geometry_dash
         // add dlls to make console better
 
         private Object[] objects;
+        private static readonly string basePath = @"C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\resources\textures\";
+        private static Dictionary<int, string> textureMap = new Dictionary<int, string>
+        {
+            {1, @"square_01_001.png" }, // block
+            {8, @"spike_01_001.png" }, // spike
+            {39, @"spike_02_001.png" } // half spike
+        };
         public render(Object[] objects)
         {
             this.objects = objects;
+            int startX = 0;
+            int startY = -100;
+            for (startX = 0; startX < 100000; startX+=10)
+            {
+                renderObjects(startX, startY, Console.WindowWidth, Console.WindowHeight);
+                Thread.Sleep(500);
+                Console.SetCursorPosition(0, 0);
+                renderBackground(new Bitmap(@"C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\resources\bg.png"));
+            }
         }
 
         // not all objects are on the screen at once
@@ -24,12 +41,50 @@ namespace geometry_dash
         {
             foreach (Object obj in objects)
             {
-                if (obj.X >= screenX && obj.X <= screenX + screenWidth && obj.Y >= screenY && obj.Y <= screenY + screenHeight)
-                {
-                    // convert object coordinates to screen coordinates
-                    float screenObjX = obj.X - screenX;
-                    float screenObjY = obj.Y - screenY;
+                if (obj == null) { continue; }
 
+                // convert object coordinates to screen coordinates
+                float screenObjX = obj.X - screenX;
+                float screenObjY = obj.Y - screenY;
+
+                if (Math.Abs(screenObjX * 2) < Console.WindowWidth && Math.Abs(screenObjY) < Console.WindowHeight)
+                {
+                    // load the texture
+                    if (textureMap.ContainsKey(obj.ID))
+                    {
+                        string texturePath = basePath + textureMap[obj.ID];
+                        Bitmap texture = new Bitmap(texturePath);
+
+                        // create new bitmap with dimensions 30x30
+                        Bitmap scaledTexture = new Bitmap(texture, new Size(30, 30));
+
+
+                        int consoleX = (int)(screenObjX * 2); // scale to console size
+                        int consoleY = Console.WindowHeight - (int) screenObjY; // invert y axis
+
+
+
+
+
+                        // render the texture to the console
+
+                        for (int y = 0; y < scaledTexture.Height; y++)
+                        {
+                            Console.SetCursorPosition(consoleX, consoleY + y);
+                            StringBuilder builder = new StringBuilder();
+                            for (int x = 0; x < scaledTexture.Width; x++)
+                            {
+                                Color color = scaledTexture.GetPixel(x, y);
+                                builder.Append($"\x1b[48;2;{color.R};{color.G};{color.B}m  ");
+                            }
+                            builder.Append("\x1b[0m\n"); // Reset color and newline
+                            
+                            Console.Write(builder);
+                        }
+                        
+                    }
+   
+                    //Console.ReadKey();
                 }
             }
         }
@@ -37,7 +92,7 @@ namespace geometry_dash
         {
             // render background
             // create a new bitmap with the same size as the screen
-            Bitmap screenBitmap = new Bitmap(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            Bitmap screenBitmap = new Bitmap(254 / 9 * 16, 254);
 
             // draw the background on the screen
             using (Graphics g = Graphics.FromImage(screenBitmap))
@@ -47,12 +102,12 @@ namespace geometry_dash
 
             // render screen bitmap to the console
             StringBuilder builder = new StringBuilder();
-            for (int y = 0; y < screenBitmap.Height; y ++)
+            for (int y = 0; y < screenBitmap.Height; y++)
             {
-                for (int x = 0; x < screenBitmap.Width; x ++)
+                for (int x = 0; x < screenBitmap.Width; x++)
                 {
                     Color color = screenBitmap.GetPixel(x, y);
-                    builder.Append($"\x1b[48;2;{color.R};{color.G};{color.B}m "); // 2 spaces
+                    builder.Append($"\x1b[48;2;{color.R};{color.G};{color.B}m  ");
                 }
                 builder.Append("\x1b[0m\n"); // Reset color and newline
             }
@@ -155,8 +210,8 @@ namespace geometry_dash
             }
 
             // Get the current width and height of the console window
-            int consoleWidth = Console.WindowWidth * 8; // Approximate width in pixels (8px per character)
-            int consoleHeight = Console.WindowHeight * 16; // Approximate height in pixels (16px per row)
+            int consoleWidth = Console.LargestWindowWidth; // Approximate width in pixels (8px per character)
+            int consoleHeight = Console.LargestWindowHeight; // Approximate height in pixels (16px per row)
 
             // Move the console window to the top-left corner, adjusting for window decorations
             SetWindowPos(consoleWindow, HWND_TOP, 0, 0, consoleWidth, consoleHeight, SWP_NOMOVE | SWP_NOZORDER);
