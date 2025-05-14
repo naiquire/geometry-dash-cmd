@@ -37,7 +37,8 @@ namespace geometry_dash
         private string loadLevelString(int levelID)
         {
             // change working directory
-            string scriptPath = @"C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash";
+            //string scriptPath = @"C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash";
+            string scriptPath = @"H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash";
 
             // load level string from file
             string levelData = string.Empty;

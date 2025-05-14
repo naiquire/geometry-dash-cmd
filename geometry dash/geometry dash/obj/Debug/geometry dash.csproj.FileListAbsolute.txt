@@ -8,3 +8,13 @@ C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry
 C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry_dash.display.resources
 C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry_dash.Properties.Resources.resources
 C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.csproj.GenerateResource.cache
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\bin\Debug\geometry dash.exe.config
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\bin\Debug\geometry dash.exe
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\bin\Debug\geometry dash.pdb
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.csproj.AssemblyReference.cache
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry_dash.display.resources
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry_dash.Properties.Resources.resources
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.csproj.GenerateResource.cache
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.csproj.CoreCompileInputs.cache
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.exe
+H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\obj\Debug\geometry dash.pdb

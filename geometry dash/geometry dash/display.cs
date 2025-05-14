@@ -20,20 +20,127 @@ namespace geometry_dash
         private int cameraX = 0; // Camera X position
 
         private List<Object> objects;
-        private static readonly string basePath = @"C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\resources\textures\";
-        private static Dictionary<int, (string path, (int x, int y) size)> textureMap = new Dictionary<int, (string, (int, int))>
+        //private static readonly string basePath = @"C:\Users\boyss\Documents\General\GitHub\geometry-dash-cmd\geometry dash\geometry dash\resources\textures\";
+        private static readonly string basePath = @"H:\Subjects\Computer Science\git\geometry-dash-cmd\geometry dash\geometry dash\resources\textures\";
+
+        public struct ObjectData
         {
-            {1, (@"square_01_001.png", (30, 30)) }, // block
-            {8, (@"spike_01_001.png", (30, 30)) }, // spike
-            {39, (@"spike_02_001.png",(30, 15)) }, // half spike
+            public string filename;
+            public int x;
+            public int y;
+            public int xoffset;
+            public int yoffset;
+        }
+
+        private static Dictionary<int, ObjectData> textureMap = new Dictionary<int, ObjectData>
+        {
+            { // block
+                1, new ObjectData()
+                {
+                    filename = "square_01_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // half block
+                0, new ObjectData()
+                 {
+                    filename = "square_01_001.png",
+                    x = 30,
+                    y = 15,
+                    xoffset = 0,
+                    yoffset = 15,
+                 }
+            },
+            { // spike
+                8, new ObjectData()
+                {
+                    filename = "spike_01_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // half spike
+                39, new ObjectData()
+                {
+                    filename = "spike_02_001.png",
+                    x = 30,
+                    y = 15,
+                    xoffset = 0,
+                    yoffset = -15,
+                }
+            },
 
             // grid tiles
-            {2, (@"square_02_001.png", (30, 30)) }, // top
-            {3, (@"square_03_001.png", (30, 30)) }, // corner
-            {4, (@"square_04_001.png",(30, 30)) }, // dot
-            {5, (@"square_05_001.png",(30, 30)) }, // none
-            {6, (@"square_06_001.png",(30, 30)) }, // much top
-            {7, (@"square_07_001.png",(30, 30)) }, // pillar
+            { // top
+                2, new ObjectData()
+                {
+                    filename = "square_02_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // corner
+                3, new ObjectData()
+                {
+                    filename = "square_02_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // dot
+                4, new ObjectData()
+                {
+                    filename = "square_04_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // none
+                5, new ObjectData()
+                {
+                    filename = "square_05_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // much top
+                6, new ObjectData()
+                {
+                    filename = "square_06_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+            { // pillar
+                7, new ObjectData()
+                {
+                    filename = "square_07_001.png",
+                    x = 30,
+                    y = 30,
+                    xoffset = 0,
+                    yoffset = 0,
+                }
+            },
+
+
+      
+            
+
         };
         public display(level level)
         {
@@ -69,10 +176,10 @@ namespace geometry_dash
 
                     PictureBox pic = new PictureBox()
                     {
-                        BackgroundImage = Bitmap.FromFile(basePath + texture.path),
+                        BackgroundImage = Bitmap.FromFile(basePath + texture.filename),
                         BackgroundImageLayout = ImageLayout.Stretch,
-                        Size = new Size(texture.size.x, texture.size.y),
-                        Location = new Point(screenX, screenY), // just off the right side of the screen
+                        Size = new Size(texture.x, texture.y),
+                        Location = new Point(screenX - texture.xoffset, screenY - texture.yoffset), // just off the right side of the screen
                     };
                     obj.pic = pic; // assign the PictureBox to the object
                     pic.BringToFront();
